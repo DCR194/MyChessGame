@@ -18,11 +18,15 @@ while running:
 
 
     # fill the screen with a color to wipe away anything from last frame
-    screen.fill("black")
+    screen.fill("green")
 
     # RENDER YOUR GAME HERE
 
     pygame.draw.rect(screen, (250, 10, 10), player)
+    screen.blit(gameLogic.myKnight.image, gameLogic.myKnight.rect)
+
+    gameLogic.drawPieces(screen)
+    
 
     # flip() the display to put your work on screen
     pygame.display.flip()

@@ -26,8 +26,8 @@ while running:
     screen.blit(gameLogic.myKnight.image, gameLogic.myKnight.rect)
 
     gameLogic.drawPieces(screen)
-    
 
+   
     # flip() the display to put your work on screen
     pygame.display.flip()
 
